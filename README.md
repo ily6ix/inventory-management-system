@@ -26,3 +26,15 @@ Clear Button:
 Clears all input fields.
 Exit Button:
 Closes the application.
+
+Limitations
+The program assumes the Inventory.txt file is formatted correctly.
+Displays results in the console rather than the GUI.
+Future Enhancements
+Add GUI components to display stock results directly within the application.
+Improve error handling for invalid inputs and file operations.
+Support dynamic updating of inventory through the application.
+Credits
+Author: HP
+Logger Utility: java.util.logging
+GUI Framework: javax.swing
