@@ -1,17 +1,28 @@
-# inventory-management-system
-Building an inventory management system in Java-requirements
-1. Adding a new product.
-2. Viewing products in the inventory.
-3. Updating product details (like price or quantity).
-4. Removing a product from inventory.
-5. Searching for products by name, category, or ID.
-6. Generating reports (e.g., low stock alerts).
+Inventory Management GUI Application
+This project implements a basic inventory management system using Java Swing for the graphical user interface (GUI). It allows users to check the stock availability of products and determine restocking needs based on an inventory file.
 
-package structure
-com.inventory
-    ├── model        # Data models (Product class, etc.)
-    ├── dao          # Data Access Object (DAO) layer for database interaction
-    ├── service      # Business logic layer
-    ├── ui           # User Interface layer (console-based, Swing, or JavaFX)
-    └── util         # Utility classes (database connection, etc.)
+Features
+User-friendly GUI for entering product details and checking inventory.
+Reads product information from a file (Inventory.txt).
+Displays stock availability and calculates the number of units required for restocking.
+Options to clear input fields or exit the application.
+How It Works
+Main Components
+GUI Layout:
 
+The GUI is implemented using the JFrame class with multiple JPanel components:
+ID Panel: For entering the product ID.
+Quantity Panel: For entering the desired quantity.
+Button Panel: Contains buttons for checking stock, clearing inputs, and exiting.
+Uses a BorderLayout to organize the panels.
+Fields for user input (JTextField) and labels (JLabel) guide the user.
+User Actions:
+
+Check Stock Button:
+Takes user input for Product ID and Quantity.
+Creates a Product object and checks its stock status using the StockCheck class.
+Displays stock information and restocking needs in the console.
+Clear Button:
+Clears all input fields.
+Exit Button:
+Closes the application.
